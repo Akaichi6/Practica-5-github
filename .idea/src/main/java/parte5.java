@@ -8,7 +8,11 @@ public class parte5 {
             System.out.print("Introduce tu año de nacimiento:");
             int anyo = sc.nextInt();
             LocalDateTime fechaActual = LocalDateTime.now();
-            int edad = fechaActual.getYear()+anyo;
+            int anyoactual = fechaActual.getYear();
+            int edad = anyoactual - anyo;
+
+            System.out.println("El año actual es: " + anyoactual);
+
             if(edad>18){
                 System.out.println("Eres mayor de edad");
             }
@@ -18,4 +22,3 @@ public class parte5 {
         }
 
     }
-}
