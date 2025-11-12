@@ -9,7 +9,7 @@ public class PracticaEntornos {
         LocalDateTime fechaActual = LocalDateTime.now();
         int edad = fechaActual.getYear() + anyo;
 
-        System.out.println("---------------------------------");
+        System.out.println("----------------------------------");
         if (edad > 18) {
             System.out.println("Eres mayor de edad");
         } else {
